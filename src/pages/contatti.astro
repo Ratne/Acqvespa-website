@@ -1,0 +1,68 @@
+---
+import Layout from '../layouts/Layout.astro';
+import {Image} from 'astro:assets';
+import spabg2 from '../assets/images/spa_bg_2.jpg';
+import spabg3 from '../assets/images/spa_bg_3.jpg';
+import spabg4 from '../assets/images/spa_bg_4.jpg';
+import spabg5 from '../assets/images/spa_bg_5.jpg';
+---
+
+<Layout title="Contatti"
+        description="Acqve Spa & Beauty - Contatti">
+    <main>
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col">
+                    <h2>CONTATTI</h2>
+                    <hr>
+                    <p>Nel cuore della campagna della bassa sabina, caratterizzata dalle molteplici influenze storiche
+                        etrusche e latine nasce il centro Acqve Spa & Beauty.
+                        Più di 300 metri quadrati dedicati alla vostra serenità e tranquillità, lontani dai ritmi
+                        frenetici della città.
+                        Qui potrete immergervi in uno spazio sensoriale dedicato a voi. Sarete accolti da profumi,
+                        colori e suoni che risveglieranno i vostri sensi.
+                        Ritrovate il vostro equilibrio ascoltando voi stessi, solo così riscoprirete la vostra
+                        bellezza.</p>
+                </div>
+            </div>
+            <div class="row align-items-start">
+
+                <div class="col">
+                    <Image class="img img-fluid p-1" src={spabg5} alt="bg5"/>
+                </div>
+                <div class="col">
+                    <Image class="img img-fluid p-1" src={spabg4} alt="bg4"/>
+                </div>
+                <div class="col">
+                    <Image class="img img-fluid p-1" src={spabg3} alt="bg3"/>
+                </div>
+                <div class="col">
+                    <Image class="img img-fluid p-1" src={spabg2} alt="bg2"/>
+                </div>
+            </div>
+            <div class="row align-items-start">
+                <div class="col"><h2>INVIA UN MESSAGGIO</h2>
+                    <hr>
+                    <iframe src="https://www.cognitoforms.com/f/8J7VGc6G_EyAKv_h6tW0Kg/1" style="border:0;width:100%;" height="683"></iframe>
+
+                </div>
+                <div class="col"><h2>DOVE CI TROVIAMO</h2>
+                    <hr>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2959.6376325901015!2d12.586936!3d42.115231!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6db75c22b133%3A0x2c2b6cf61d316d86!2sVia%20Tiberina%2C%2034%2C%2000060%20Capena%20RM%2C%20Italia!5e0!3m2!1sit!2sus!4v1703972739575!5m2!1sit!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+        </div>
+        <script src="https://www.cognitoforms.com/f/iframe.js"></script>
+    </main>
+</Layout>
+
+<style>
+    h2 {
+        color: #468B78;
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    hr {
+        border: 1px solid #468B78;
+    }
+</style>

@@ -1,0 +1,72 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/images/logo.png';
+import facebook from '../assets/images/facebook.svg';
+import instagram from '../assets/images/instagram.svg';
+---
+
+<div class="container mt-5">
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <Image class="img-fluid mt-2" width="150" src={logo} alt="Acqve Spa Logo" />
+                <p class="mt-2 footerText">
+                    Acqve SRLS<br>
+                    Via Tiberina, 34 - 00060 Capena (Rm)<br>
+                    Tel: 062147706<br>
+                    Whatsaap: 3347442440<br>
+
+                </p>
+            </div>
+            <div class="col-sm">
+                <h1 class="footerH1">Orari di Apertura</h1>
+                <ul>
+                    <li>
+                        Mar - Sab: 09:00 - 19:30
+                    </li>
+                    <li>Dom: Aperto solo spa dalle 10 alle 13 previa prenotazione</li>
+                </ul>
+
+            </div>
+            <div class="col-sm">
+                <h1 class="footerH1">Seguici</h1>
+                <ul class="d-flex list-unstyled">
+                    <li><a href="https://www.facebook.com/acqvespa-106617371810835/" target="_blank"><Image alt="facebook" src={facebook} width="40"/></a></li>
+                    <li><a href="https://www.instagram.com/acqvespa/" target="_blank"><Image alt="instagram" src={instagram} width="40"/></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    </footer>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+
+<style>
+    .footerText{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .footerH1{
+        color: #468B78;
+        font-size: 26px;
+        font-weight: bold;
+    }
+</style>

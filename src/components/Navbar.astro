@@ -1,0 +1,96 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/images/logo.png';
+---
+
+
+<div class="container">
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a href="/"><Image class="img-fluid mt-2" width="200" src={logo} alt="Acqve Spa Logo" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 colorNavbar ms-2 me-1">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/area-benessere-spa">Spa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/massaggi">Massaggi</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEstetica" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Estetica
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownEstetica">
+                            <li><a class="dropdown-item" href="/estetica">Estetica</a></li>
+                            <li><a class="dropdown-item" href="/estetica-avanzata">Avanzata</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/estetica" id="navbarDropdownDimagrimento" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dimagrimento
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownDimagrimento">
+                            <li><a class="dropdown-item" href="#">Marzia Clinic</a></li>
+                            <li><a class="dropdown-item" href="#">Alpha Cosmesi</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/estetica" id="navbarDropdownServizi" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Servizi
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownServizi">
+                            <li><a class="dropdown-item" href="#">Make Up</a></li>
+                            <li><a class="dropdown-item" href="/dermopigmentazione">Dermopigmentazione</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/promozioni">Promozioni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/contatti">Contatti</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+
+                    <a href="/prenota-ora" class="btn btn-outline-success">PRENOTA ORA</a>
+                </div>
+            </div>
+        </div>
+
+</nav>
+</div>
+
+<style>
+    .colorNavbar {
+        .show {
+            color: white;
+        }
+        border: #6DC2AF 1px solid;
+        background-color: #6DC2AF;
+        text-transform: uppercase;
+        :hover{
+           background-color:  #468B78
+        }
+        .dropdown-menu{
+            background-color: #6DC2AF;
+            :hover {
+                background-color: #468B78;
+            }
+        }
+        li {
+            background-color: #6DC2AF;
+        }
+        a {
+            color: white
+        };
+
+    }
+</style>

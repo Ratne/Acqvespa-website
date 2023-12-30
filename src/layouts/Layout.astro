@@ -1,0 +1,27 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+interface Props {
+	title: string;
+	description: string;
+}
+const { title } = Astro.props;
+const { description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+<Header title={title} description={description}/>
+	<body>
+	<Navbar />
+		<slot />
+	<Footer />
+	</body>
+</html>
+
+<style>
+	body{
+		background-color: #f5f5f5;
+	}
+</style>
